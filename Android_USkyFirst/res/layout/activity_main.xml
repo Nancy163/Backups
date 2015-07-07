@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/robot" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="你好 我叫机器人红红，你呢？"
+        android:textColor="#928F90" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/login_text"
+        android:layout_marginTop="30dp"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_ename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="姓名"
+            android:textColorHint="#DCDBDC" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/login_etel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="电话"
+            android:inputType="phone"
+            android:textColorHint="#DCDBDC" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:background="#E84134"
+        android:padding="5dp"
+        android:text="开始云验"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
